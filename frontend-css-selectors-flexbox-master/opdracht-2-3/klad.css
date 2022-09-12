@@ -1,0 +1,83 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f3d9;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030027;
+}
+
+.left-in-bar {
+    margin: 40px;
+    font-weight: bold;
+}
+
+.right-in-bar {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    color: #f2f3d9;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.container {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* stack flex items vertically */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; /* center items horizontally, in this case */
+    text-align: center;
+    margin: 20px;
+    flex-shrink: 1;
+}
+
+.title {
+    max-width: 980px; /*welke waarde moet ik hier nemen?*/
+    font-weight: bold;
+    /*margin-left: 20 px; waarom werkt dit niet? */
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.opdracht2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    height: 350px;
+    max-width: 280px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    background-color: #c16E70;
+    flex: 1 1 0px;
+}
+
+
+

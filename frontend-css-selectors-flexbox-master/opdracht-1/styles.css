@@ -1,0 +1,103 @@
+/*Oefenen met flexbox*/
+/*{
+    margin: 0;
+    padding: 0;
+}*/
+/* Toegevoegd voor opdracht 5 de padding/border/margin van de elementen "articles" wordt nu ook meegenomen:  */
+/* berekenen vanaf de border en niet vanaf content */
+* {
+    box-sizing: border-box;
+}
+
+/* Opdracht 2.1*/
+.one {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Opdracht 2.2 */
+.two {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Opdracht 2.3: moet ik ruimte creeren tussen list items mbv padding? */
+.three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*uitlijning van de text in de div*/
+.midden_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Waarom werkt space-between niet voor list items*/
+.ruimte_tussen_items {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*dit werkt dus niet voor lijsten*/
+}
+
+/*ruimte creeeren tussen de list elementen*/
+.padding_item2 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* Opdracht 2.4*/
+
+/*Centreer het formulier in het midden van de pagina*/
+.midden {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Zet de gebruikersnamen en invoervelden onder elkaar op de juiste plek */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Opdracht 2.5*/
+
+.five {
+    display: flex;
+   /* align-content: safe;*/
+    align-items: stretch;
+    /*justify-content: stretch;*/
+    /*flex-direction: row; Dit is standaard setting */
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    min-width:400px;
+    justify-content: stretch; /*heb ik hier wat aan?*/
+    flex-grow: 1;
+}
+
+.article3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    min-width: 400px;
+    flex-grow: 1;
+}
+
+
+
+
+
